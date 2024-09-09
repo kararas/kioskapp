@@ -10,23 +10,21 @@
         </style>
 
         <script>
+            // ボタンをクリックした時に参照する関数(処理)の定義
             function button2ClickAction() {
-                // 印刷コマンドを実行
-                window.print();
-            }
-        </script>
+            // {} の中はボタンが押された時に処理される内容
+         setTimeout(function () {
+	         window.print();         
+	    }, 200);
+    }
+</script>
+
     </head>
     <body>
         <h1>Hello World</h1>
-        <p class="deco">印刷テスト</p>
-        <!-- 自動でクリックするためのボタン -->
-        <button id="printButton" style="display:none;" onclick="button2ClickAction()">印刷</button>
 
-        <script>
-            // ページ読み込み後にボタンを自動的にクリック
-            window.onload = function () {
-                document.getElementById('printButton').click();
-            };
-        </script>
+        <p class="deco">印刷テスト</p>
+        <button onclick="button2ClickAction()">印刷</button>
+        
     </body>
 </html>
