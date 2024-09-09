@@ -1,0 +1,1 @@
+start chrome --kiosk --kiosk-printing %CD%\sample.html
